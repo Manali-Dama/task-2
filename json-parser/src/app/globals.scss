@@ -1,3 +1,128 @@
+//last change
+
+pre {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f1f8e9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  
+  /* Ensure long words wrap properly */
+  white-space: pre-wrap; // Allows wrapping of text
+  word-wrap: break-word;  // Ensures words break if needed
+  overflow-wrap: break-word; // Additional support for word breaking
+}
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+}
+
+.input-json,
+.display-json {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+textarea {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #90caf9;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+textarea::placeholder {
+  color: #90caf9;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Toggle Button */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* JSON Styling */
+pre {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f1f8e9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.json-key {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.json-string {
+  color: #388e3c;
+}
+
+.json-boolean {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
 
  
 // ::export {
